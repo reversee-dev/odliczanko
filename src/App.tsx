@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import Countdown from "react-countdown";
-import {Helmet} from "react-helmet";
+// import {Helmet} from "react-helmet"; not working on heroku
 
-const TITLE = 'odliczanko'
+// const TITLE = 'odliczanko'
 
 var countDownDate = new Date("Oct 15, 2021 00:00:00").getTime();
 
@@ -24,9 +24,6 @@ function App() {
               <h6>ciekawe co sie wtedy stanie...</h6>
           </div>
       </header>
-        <Helmet>
-            <title>{ TITLE }</title>
-        </Helmet>
     </div>
   );
 }
